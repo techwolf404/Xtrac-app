@@ -1,0 +1,16 @@
+<div>
+
+<p class='login'>
+        <%= link_to "#{@group.name}", @group %>
+</p>
+
+  <p>
+    <strong>Amount:</strong>
+    $<%= @group.subjects.sum(:amount) %>
+  </p>
+
+  <p>
+  <%= @group.subjects.name%>
+  </p>
+
+</div>
